@@ -1,0 +1,20 @@
+#method 1
+l = [2,3,4,5,6,7]
+temp = l[0]
+l[0] = l[-1]
+l[-1] = temp
+print[l]
+
+#method 2  for swap first and last element of list
+def swap(newlist):
+    newlist[0],newlist[-1] = newlist[-1],newlist[0]
+    return newlist
+newlist = [2,3,4,5,6,7]
+print(swap(newlist))
+
+
+#method 3 for swap first and last element of list
+l = [2,3,4,5,6]
+temp = l[0],l[-1]
+l[0],l[-1] = temp
+print(l)
